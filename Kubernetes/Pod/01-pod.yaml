@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podMsql
+  labels:
+    app: podMsql
+spec:
+  containers:
+    - name: container-podMsql
+      image: msql:latest
+      ports:
+        - containerPort: 3306
